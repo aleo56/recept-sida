@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Luxurious+Roman&family=Neonderthaw&family=Open+Sans&family=Playfair+Display:ital@0;1&display=swap");
+* {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.all_mat::-webkit-scrollbar {
+  display: none;
+}
+
+.frågor {
+  font-family: "Luxurious Roman", cursive;
+  text-align: center;
+  text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.heading {
+  text-align: center;
+}
+
+.header {
+  color: rgb(9, 10, 10);
+  font-family: "Playfair Display", serif;
+  text-shadow: 1px 1px black;
+}
+
+.searchbar {
+  padding: 6px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  border: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  padding: 5px;
+  flex: 100%;
+  box-shadow: 0px 2px 2px -2px rgb(73, 73, 73);
+}
+
+#bars {
+  margin-right: 10px;
+  font-size: 1.3em;
+  color: #4e4e4e;
+}
+
+.sök {
+  color: white;
+  text-shadow: 2px 2px rgb(87, 87, 87);
+  margin-bottom: 0px;
+}
+
+.searchbar [type="text"] {
+  padding: 9px;
+  margin-top: 8px;
+  font-size: 27px;
+  border: solid;
+  border-radius: 25px;
+  transition: width;
+}
+
+.searchbar [type="text"]:focus {
+  width: 100%;
+}
+
+.searchbar_background {
+  background-image: url("https://images.deliveryhero.io/image/fd-op/LH/s3ww-hero.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  height: calc(100vh - 250px);
+  align-items: center;
+  justify-content: center;
+}
+
+.omoss_background {
+  background-image: url(rödbeta.png);
+  margin-top: 0px;
+}
+
+.receptkategori {
+  height: 45px;
+  box-shadow: 5px 2px 2px rgb(73, 73, 73);
+  display: flex;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+}
+body ul {
+  display: flex;
+  list-style: none;
+}
+
+body li {
+  display: flex;
+  list-style: none;
+}
+
+.all_mat {
+  text-align: left;
+  color: rgb(48, 46, 46);
+  overflow: auto;
+}
+
+.mat_bilder {
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.mat_bilder:hover {
+  width: 260px;
+  height: 260px;
+}
+
+.mat_text {
+  padding-left: 0px;
+}
+
+.blankspace {
+  height: 30px;
+}
+
+.large_blankspace {
+  height: 185px;
+}
+
+.footer {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(207, 206, 206);
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.logo {
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  margin-top: 1px;
+}
+
+.logo:hover {
+  height: 35px;
+  width: 35px;
+}
+.social_media {
+  margin-top: 7px;
+  margin-left: 5px;
+  padding: 4px;
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  font-size: 1.15em;
+}
+
+#instagram {
+  margin-left: 75px;
+}
+
+#youtube {
+  margin-left: 75px;
+}
+
+.omossdiv {
+  display: flex;
+  height: 300px;
+  width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.omosstext {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .mat_bilder {
+    padding: 10px;
+    border-radius: 50px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }
+
+  .omosslink {
+    display: block;
+  }
+
+  .searchbar [type="text"] {
+    padding: 9px;
+    margin-top: 8px;
+    font-size: 18px;
+    border: solid;
+    border-radius: 25px;
+  }
+  .searchbar_background {
+    height: 30vh;
+  }
+
+  #instagram {
+    margin-left: 80px;
+  }
+  #youtube {
+    margin-left: 88px;
+  }
+}
